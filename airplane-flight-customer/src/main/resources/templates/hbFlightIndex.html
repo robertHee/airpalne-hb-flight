@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:s="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+    <link th:href="@{/css/bootstrap.min.css}" rel="stylesheet">
+</head>
+<body style="padding-left: 100px;padding-right: 100px;">
+
+
+    <center>
+        <div style="width:100%;text-align:center">
+            <h1>以下是您查询的的航班信息</h1>
+        </div>
+        <table class="table table-striped">
+            <caption><a th:href="@{/add}">添加航班信息</a></caption>
+
+            </div>
+            <thead>
+                <tr>
+                    <th>航班名称</th>
+                    <th>起飞城市</th>
+                    <th>到达城市</th>
+                    <th>起飞时间</th>
+                    <th>到达时间</th>
+                    <th>行程类型</th>
+                    <th>舱位类型</th>
+                    <th>航班单价</th>
+                    <th>航班状态</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr th:each="hbFlight : ${hbFlightstList}">
+                    <td th:text="${hbFlight.flight_name}"></td>
+                    <td th:text="${hbFlight.departure_city}"></td>
+                    <td th:text="${hbFlight.arrival_city}"></td>
+                    <td th:text="${hbFlight.departure_time}"></td>
+                    <td th:text="${hbFlight.arrival_time}"></td>
+                    <td th:text="${hbFlight.route_type}"></td>
+                    <td th:text="${hbFlight.berth_type}"></td>
+                    <td th:text="${hbFlight.flight_price}"></td>
+                    <td th:text="${hbFlight.flight_status}"></td>
+                </tr>
+                <tr align="center">
+                </tr>
+            </tbody>
+        </table>
+
+    </center>
+</body>
+</html>

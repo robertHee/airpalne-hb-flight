@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:s="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+    <link th:href="@{/css/bootstrap.min.css}" rel="stylesheet">
+</head>
+<body style="padding-left: 100px;padding-right: 100px;">
+
+    <center>
+        <div style="width:100%;text-align:center">
+            <h1>以下是您查询的的航班信息</h1>
+        </div>
+        <table class="table table-striped">
+            <caption><a th:href="@{/add}">添加航班信息</a></caption>
+
+            </div>
+            <thead>
+                <tr>
+                    <th>订单号</th>
+                    <th>航班编号</th>
+                    <th>用户编号</th>
+                    <th>总价</th>
+                    <th>订单状态</th>
+                    <th>创建时间</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr th:each="hbOrder : ${hbOrdersList}">
+                    <td th:text="${hbOrder.order_no}"></td>
+                    <td th:text="${hbOrder.flight_id}"></td>
+                    <td th:text="${hbOrder.user_id}"></td>
+                    <td th:text="${hbOrder.amount_price}"></td>
+                    <td th:text="${hbOrder.order_status}"></td>
+                    <td th:text="${hbOrder.create_time}"></td>
+                </tr>
+                <tr align="center">
+                </tr>
+            </tbody>
+        </table>
+
+    </center>
+</body>
+</html>

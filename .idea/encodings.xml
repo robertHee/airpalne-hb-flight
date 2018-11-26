@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/airplane-alipay-customer" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/airplane-flight-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/airplane-flight-customer" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/airplane-flight-provider" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/airplane-order-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/airplane-order-customer" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/airplane-order-provider" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/airplane-pay-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/airplane-pay-customer" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/airplane-pay-provider" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/airplane-pre-page" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/airplane-user-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/airplane-user-customer" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/airplane-user-provider" charset="UTF-8" />
+  </component>
+</project>

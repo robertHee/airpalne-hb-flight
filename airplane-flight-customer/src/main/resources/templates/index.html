@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:s="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+    <link th:href="@{/css/bootstrap.min.css}" rel="stylesheet">
+</head>
+<body style="padding-left: 100px;padding-right: 100px;">
+  <div style="width:100%;text-align:center">
+    <h1>航班查询页面</h1>    <!--th:action="@{/findSpecificFlight}"-->
+      <form class="form-horizontal" role="form" th:method="post" action="/findSpecificFlight">
+          <div class="form-group">
+              <div class="col-sm-10">
+                <!--<label for="departureCity" class="col-sm-2 control-label">起飞城市</label>-->
+                  <label>达到城市：</label>
+                  <select name="departureCity" id="departureCity">
+                      <option value="0" selected="selected">--请选择起飞城市--</option>
+                      <option value="1111">武汉</option>
+                      <option value="2222">兰州</option>
+                      <option value="3333">黄冈</option>
+                      <option value="4444">武威</option>
+                  </select>
+              <!--<label for="arrivalCity" class="col-sm-2 control-label">到达城市</label>-->
+                  <label>到达城市：</label>
+                  <select name="arrivalCity" id="arrivalCity">
+                      <option value="0" selected="selected">--请选择到达城市--</option>
+                      <option value="1111">武汉</option>
+                      <option value="2222">兰州</option>
+                      <option value="3333">黄冈</option>
+                      <option value="4444">武威</option>
+                  </select>
+                  <button type="submit" class="btn btn-default" >查询</button>
+              </div>
+          </div>
+      </form>
+    </form>
+  </div>
+
+    <!--<div class="form-horizontal">
+        <fieldset>
+            <div class="col-sm-10">
+                <label for="flight.departureCity" class="col-sm-2 control-label">起飞城市</label>
+                <s:select name="flight.departureCity" id="departureCity"
+                          list="#{'1':'武汉','2':'兰州','3':'黄冈','4':'武威'}">请输起飞到城市</s:select>
+                <label for="flight.arrivalCity" class="col-sm-2 control-label">到达城市</label>
+                <s:select name="flight.arrivalCity" id="arrivalCity"
+                          list="#{'1':'武汉','2':'兰州','3':'黄冈','4':'武威'}">请输入达到城市</s:select>
+            </div>
+            <div class="clearfix"></div>
+            <ul id="formtip2"></ul>
+            <p class="center span5">
+                <button type="submit" class="btn btn-primary" id="findBtn">查询</button>
+            </p>
+        </fieldset>
+    </div>-->
+
+    <center>
+        <div style="width:100%;text-align:center">
+            <h1>以下是您查询的的航班信息</h1>
+        </div>
+        <table class="table table-striped">
+            <caption><a th:href="@{/add}">添加航班信息</a></caption>
+
+            </div>
+            <thead>
+                <tr>
+                    <th>航班ID</th>
+                    <th>航班编号</th>
+                    <th>起飞城市ID</th>
+                    <th>起飞时间</th>
+                    <th>达到城市ID</th>
+                    <th>到达时间</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr th:each="flight : ${flightList}">
+                    <td th:text="${flight.id}"></td>
+                    <td th:text="${flight.flightNo}"></td>
+                    <td th:text="${flight.departureCity}"></td>
+                    <td th:text="${flight.departureTime}"></td>
+                    <td th:text="${flight.arrivalCity}"></td>
+                    <td th:text="${flight.arrivalTime}"></td>
+                </tr>
+                <tr align="center">
+                </tr>
+            </tbody>
+        </table>
+
+    </center>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:s="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+    <link th:href="@{/css/bootstrap.min.css}" rel="stylesheet">
+</head>
+<body style="padding-left: 100px;padding-right: 100px;">
+
+
+    <center>
+        <div style="width:100%;text-align:center">
+            <h1>以下是您查询的航班用户信息</h1>
+        </div>
+        <table class="table table-striped">
+            <caption><a th:href="@{/add}">添加航班信息</a></caption>
+
+            </div>
+            <thead>
+                <tr>
+                    <th>用户登录编号</th>
+                    <th>用户名称</th>
+                    <th>用户性别</th>
+                    <th>用户国籍</th>
+                    <th>联系方式</th>
+                    <th>email</th>
+                </tr>
+            </thead>
+            <tbody>
+            <tr th:each="hbUser : ${hbUsersList}">
+                <td th:text="${hbUser.login_code}"></td>
+                <td th:text="${hbUser.user_name}"></td>
+                <td th:text="${hbUser.sex}"></td>
+                <td th:text="${hbUser.nation}"></td>
+                <td th:text="${hbUser.phone}"></td>
+                <td th:text="${hbUser.email}"></td>
+            </tr>
+                <tr align="center">
+                </tr>
+            </tbody>
+        </table>
+
+    </center>
+</body>
+</html>

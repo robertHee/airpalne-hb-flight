@@ -1,0 +1,361 @@
+﻿<!DOCTYPE html>
+<html lang="en" class="wide wow-animation">
+  <head>
+    <!-- Site Title-->
+    <title>Home</title>
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <!-- Stylesheets-->
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Montserrat:400,700%7CLato%7CRoboto">
+    <link rel="stylesheet" href="../static/css/style.css">
+		<!--[if lt IE 10]>
+    <div style="background: #212121; padding: 10px 0; box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3); clear: both; text-align:center; position: relative; z-index:1;"><a href="http://windows.microsoft.com/en-US/internet-explorer/"><img src="../static/images/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a></div>
+    <script src="../static/js/html5shiv.min.js"></script>
+		<![endif]-->
+  </head>
+  <body>
+    <!-- Page-->
+    <div class="page">
+      <!-- Page Header-->
+      <header class="page-head">
+        <!-- RD Navbar-->
+        <div class="rd-navbar-wrap">
+          <nav data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fullwidth" data-md-layout="rd-navbar-fullwidth"
+               data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-static"
+               data-lg-device-layout="rd-navbar-static" data-sm-stick-up-offset="150px" data-lg-stick-up-offset="150px"
+               class="rd-navbar">
+            <div class="rd-navbar-inner">
+              <!-- RD Navbar Panel-->
+              <div class="rd-navbar-wrapper">
+                <div class="rd-navbar-panel">
+                  <!-- RD Navbar Toggle-->
+                  <button data-rd-navbar-toggle=".rd-navbar-nav-wrap" class="rd-navbar-toggle"><span></span></button>
+                  <!-- RD Navbar Brand-->
+                  <div class="rd-navbar-brand"><a href="index.html" class="brand-name">
+                    <div class="logo" ><img src="../static/img/logoimg副本.png" alt=""></div>
+                  </a></div>
+                </div>
+                <div class="rd-navbar-nav-wrap">
+                  <!-- RD Navbar Nav-->
+                  <ul class="rd-navbar-nav">
+                    <li class="active"><a href="index.html"><span
+                            class="material-icons-room icon icon-white icon-lg"></span><span>首页</span><span
+                            class="triangle"></span></a></li>
+                    <li><a href="flight.html"><span
+                            class="material-icons-airplanemode_active icon icon-white icon-lg"></span><span>机票</span><span
+                            class="triangle"></span></a></li>
+                    <li><a href="hotels.html"><span
+                            class="material-icons-business icon icon-white icon-lg"></span><span>酒店</span><span
+                            class="triangle"></span></a></li>
+                    <li><a href="login.html"><span
+                            class="material-icons-group icon icon-white icon-lg"></span><span>登录</span><span
+                            class="triangle"></span></a></li>
+                    <li><a href="register.html"><span class="material-icons-email icon icon-white icon-lg"></span><span>注册</span><span
+                            class="triangle"></span></a></li>
+                  </ul>
+                  <!--联系我们接口-->
+                </div>
+                <a href="#" class="##############"><span class="#####################"></span><span></span></a>
+                <!--联系我们接口-->
+              </div>
+            </div>
+          </nav>
+        </div>
+      </header>
+      <!-- Page Content-->
+      <main class="page-content">
+        <section class="section-60 section-sm-95 bg-image bg-image-1 text-center section-sm-bottom-60">
+          <!-- Swiper-->
+          <div data-autoplay="5000" class="swiper-container swiper-slider text-center">
+            <div class="swiper-wrapper">
+              <div data-slide-bg="../static/images/flight111.jpg" class="swiper-slide">
+              </div>
+              <div data-slide-bg="../static/images/flight222.jpg" class="swiper-slide">
+
+              </div>
+              <div data-slide-bg="../static/images/flight333.jpg" class="swiper-slide">
+              </div>
+            </div>
+            <!-- Swiper Pagination-->
+            <div class="swiper-pagination"></div>
+          </div>
+          <div class="shell">
+            <h1 class="txt-white">欢迎来到环球航空公司</h1>
+            <div class="range">
+              <div class="cell-lg-8 cell-lg-preffix-2">
+
+                <!-- RD Mailform-->
+                <form class="rd-mailform text-left form-search">
+                  <p class="small text-xs-right">酒店+机票</p>
+                  <div class="range offset-top-22">
+
+                    <!--地点控件-->
+                    <div class="cell-sm-6 ">
+                      <div class="form-group">
+                        <label class="form-label">出发城市</label>
+                        <input id="from" type="text" name="city" data-constraints="@Required" placeholder="" class="form-control" mod="address|notice" mod_address_source="hotel" mod_address_suggest="@Beijing|北京|53@Shanghai|上海|321@Shenzhen|深圳|91@Guangzhou|广州|80@Qingdao|青岛|292@Chengdu|成都|324@Hangzhou|杭州|383@Wuhan|武汉|192@Tianjin|天津|343@Dalian|大连|248@Xiamen|厦门|61@Chongqing|重庆|394@" mod_address_reference="cityid" mod_notice_tip="北京" >
+                      </div>
+                    </div>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <div class="form-group">
+                      <div class="form-group">
+                      <label class="form-label">到达城市</label>
+                      <input type="text" value="" size="15" id="getcity_name" class="form-control" style="width:350px;" name="getcity_name" mod="address|notice" mod_address_source="hotel" mod_address_suggest="@Beijing|北京|53@Shanghai|上海|321@Shenzhen|深圳|91@Guangzhou|广州|80@Qingdao|青岛|292@Chengdu|成都|324@Hangzhou|杭州|383@Wuhan|武汉|192@Tianjin|天津|343@Dalian|大连|248@Xiamen|厦门|61@Chongqing|重庆|394@" mod_address_reference="getcityid" mod_notice_tip="上海" />
+                      </div>
+                    </div>
+                    <div id="jsContainer" class="jsContainer" style="height:0">
+                      <div id="tuna_alert" style="display:none;position:absolute;z-index:999;overflow:hidden;"></div>
+                      <div id="tuna_jmpinfo" style="visibility:hidden;position:absolute;z-index:120;"></div>
+                    </div>
+                    <!--地点控件-->
+
+                    <!--时间-->
+                    <div class="cell-sm-6 offset-top-45">
+                      <div class="form-group date">
+                        <label  class="form-label">出发日期</label>
+                        <input id="datetimepicker1" type="" placeholder="" data-constraints="@Required" class="form-control" onClick="WdatePicker()">
+                      </div>
+                    </div>
+                    <div class="cell-sm-6 offset-top-45">
+                      <div class="form-group date">
+                        <label  class="form-label">返回日期</label>
+                        <input id="datetimepicker2" type=""  placeholder="" data-constraints="@Required" class="form-control" onClick="WdatePicker()">
+                      </div>
+                    </div>
+                    <!--时间-->
+                    <div class="cell-xs-6 cell-md-3 offset-top-45">
+                      <div class="form-group">
+
+                        <label for="select-1" class="form-label">航空公司</label>
+                        <select id="select-1" data-placeholder="-" data-minimum-results-for-search="Infinity" class="form-control select-filter">
+                          <option>-</option>
+                          <option>1</option>
+                          <option>2</option>
+                          <option>3</option>
+                          <option>4</option>
+                          <option>5</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="cell-xs-6 cell-md-3 offset-top-45">
+                      <div class="form-group">
+
+                        <label for="select-2" class="form-label">船舱等级</label>
+                        <select id="select-2" data-placeholder="-" data-minimum-results-for-search="Infinity" class="form-control select-filter">
+                          <option>-</option>
+                          <option>1</option>
+                          <option>2</option>
+                          <option>3</option>
+                          <option>4</option>
+                          <option>5</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="cell-xs-6 cell-md-3 offset-top-45">
+                      <div class="form-group">
+
+                        <label for="select-3" class="form-label">是否携带儿童/婴儿</label>
+                        <select id="select-3" data-placeholder="-" data-minimum-results-for-search="Infinity" class="form-control select-filter">
+                          <option>-</option>
+                          <option>1</option>
+                          <option>2</option>
+                          <option>3</option>
+                          <option>4</option>
+                          <option>5</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="cell-xs-6 cell-md-3 offset-top-45">
+                      <div class="form-group">
+
+                        <label for="select-4" class="form-label">乘客人数</label>
+                        <select id="select-4" data-placeholder="-" data-minimum-results-for-search="Infinity" class="form-control select-filter">
+                          <option>-</option>
+                          <option>1</option>
+                          <option>2</option>
+                          <option>3</option>
+                          <option>4</option>
+                          <option>5</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="cell-xs-12 offset-top-37">
+                      <a href="flight_list.html"  class="btn btn-orange btn-fullwidth btn-winona btn-sm">搜索</a>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!--Section Hot Tours-->
+        <section class="section-71 section-bottom-80">
+          <div class="shell">
+            <h2 class="text-center">热门目的地</h2>
+            <div class="range">
+              <!-- Owl Carousel-->
+              <div data-items="1" data-xs-items="1" data-sm-items="2" data-md-items="3" data-stage-padding="15"
+                   data-loop="false" data-margin="30" data-nav="true" class="owl-carousel">
+                <div class="owl-item">
+                  <!--<div class="thumbnail-custom"><img src="../static/images/index-5-512x270.jpg" alt="" width="370" height="370">-->
+                  <div class="thumbnail-custom"><img src="../static/images/北京.jpg" alt="" width="370" height="370">
+                    <div class="caption">
+                      <div class="h5">-48%</div>
+                      <h4>北京</h4>
+                      <p></p>
+                      <div class="">￥2888/人起</div>
+                      <a href="#" data-text="购买" class="btn btn-winona btn-transparent btn-xs">购买</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="owl-item">
+                  <div class="thumbnail-custom"><img src="../static/images/上海.jpg" alt="" width="370" height="370">
+                    <div class="caption">
+                      <div class="h5">-35%</div>
+                      <h4>上海</h4>
+                      <p></p>
+                      <div class="">￥3326/人起</div>
+                      <a href="#" data-text="购买" class="btn btn-winona btn-transparent btn-xs">购买</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="owl-item">
+                  <div class="thumbnail-custom"><img src="../static/images/三亚.jpg" alt="" width="370" height="370">
+                    <div class="caption">
+                      <div class="h5">-35%</div>
+                      <h4>三亚</h4>
+                      <p></p>
+                      <div class="">￥1326/人起</div>
+                      <a href="#" data-text="购买" class="btn btn-winona btn-transparent btn-xs">购买</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="owl-item">
+                  <div class="thumbnail-custom"><img src="../static/images/桂林.jpg" alt="" width="370" height="370">
+                    <div class="caption">
+                      <div class="h5">-32%</div>
+                      <h4>桂林</h4>
+                      <p></p>
+                      <div class="">￥1142/人起</div>
+                      <a href="#" data-text="购买" class="btn btn-winona btn-transparent btn-xs">购买</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="owl-item">
+                  <div class="thumbnail-custom"><img src="../static/images/厦门.jpg" alt="" width="370" height="370">
+                    <div class="caption">
+                      <div class="h5">-36%</div>
+                      <h4>厦门</h4>
+                      <p></p>
+                      <div class="">￥1006/人起</div>
+                      <a href="#" data-text="购买" class="btn btn-winona btn-transparent btn-xs">购买</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="owl-item">
+                  <div class="thumbnail-custom"><img src="../static/images/成都.jpg" alt="" width="370" height="370">
+                    <div class="caption">
+                      <div class="h5">-36%</div>
+                      <h4>成都</h4>
+                      <p></p>
+                      <div class="">￥1198/人起</div>
+                      <a href="#" data-text="购买" class="btn btn-winona btn-transparent btn-xs">购买</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="owl-item">
+                  <div class="thumbnail-custom"><img src="../static/images/丽江.jpg" alt="" width="370" height="370">
+                    <div class="caption">
+                      <div class="h5">-42%</div>
+                      <h4>丽江</h4>
+                      <p></p>
+                      <div class="">￥2008/人起</div>
+                      <a href="#" data-text="购买" class="btn btn-winona btn-transparent btn-xs">购买</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--<div class="cell-xs-12 offset-top-50 text-center"><a href="#" data-text="热门推荐" class="btn btn-xs btn-winona btn-transparent-2">热门推荐</a></div>-->
+            </div>
+          </div>
+        </section>
+
+        <!-- Page Footer-->
+        <footer class="page-foot bg-base text-center text-md-left">
+          <section class="section-82">
+            <div class="shell">
+              <div class="cell-sm-6 cell-md-4">
+                <h6>关注我们</h6>
+                <p class="offset-top-23">预订，评论和建议的酒店，度假村，航班，度假租赁，旅游套餐，和更多!</p>
+                <ul class="list-inline offset-top-34">
+                  <li><img src="../static/images/丽江.jpg" class="icon icon-sm-2 icon-round icon-white fa-twitter" ></li>
+                  <li><img src="../static/images/中山桥.jpg" class="icon icon-sm-2 icon-round icon-white fa-twitter" ></li>
+                  <li><img src="../static/images/flight333.jpg" class="icon icon-sm-2 icon-round icon-white fa-twitter" ></a></li>
+                  <li><img src="../static/images/flight222.jpg" class="icon icon-sm-2 icon-round icon-white fa-twitter" ></li>
+                </ul>
+              </div>
+            </div>
+          </section>
+          <section class="bg-gray-dark section-10">
+            <div class="shell">
+              <p>
+                版权©2018-环球航空公司版权所有。
+              </p>
+            </div>
+          </section>
+        </footer>
+      </main>
+    </div>
+    <!-- Global Mailform Output-->
+    <div id="form-output-global" class="snackbars"></div>
+    <!-- PhotoSwipe Gallery-->
+    <div tabindex="-1" role="dialog" aria-hidden="true" class="pswp">
+      <div class="pswp__bg"></div>
+      <div class="pswp__scroll-wrap">
+        <div class="pswp__container">
+          <div class="pswp__item"></div>
+          <div class="pswp__item"></div>
+          <div class="pswp__item"></div>
+        </div>
+        <div class="pswp__ui pswp__ui--hidden">
+          <div class="pswp__top-bar">
+            <div class="pswp__counter"></div>
+            <button title="Close (Esc)" class="pswp__button pswp__button--close"></button>
+            <button title="Share" class="pswp__button pswp__button--share"></button>
+            <button title="Toggle fullscreen" class="pswp__button pswp__button--fs"></button>
+            <button title="Zoom in/out" class="pswp__button pswp__button--zoom"></button>
+            <div class="pswp__preloader">
+              <div class="pswp__preloader__icn">
+                <div class="pswp__preloader__cut">
+                  <div class="pswp__preloader__donut"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+            <div class="pswp__share-tooltip"></div>
+          </div>
+          <button title="Previous (arrow left)" class="pswp__button pswp__button--arrow--left"></button>
+          <button title="Next (arrow right)" class="pswp__button pswp__button--arrow--right"></button>
+          <div class="pswp__caption">
+            <div class="pswp__caption__cent"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Java script-->
+   <script  type="text/javascript" src="../static/js/core.min.js"></script>
+    <script  type="text/javascript" src="../static/js/script.js" ></script>
+    <!--地点控件-->
+    <script type="text/javascript" src="../static/js/fixdiv.js"></script>
+    <script type="text/javascript" src="../static/js/address.js"></script>
+    <!--地点控件-->
+    <!-- 日历控件 -->
+    <script language="javascript" type="text/javascript" src="../static/js/My97DatePicker/WdatePicker.js"></script>
+    <!-- 日历控件 -->
+  </body>
+</html>

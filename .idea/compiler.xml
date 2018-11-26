@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="airplane-flight-api" />
+        <module name="airplane-flight-customer" />
+        <module name="airplane-flight-provider" />
+        <module name="airplane-order-api" />
+        <module name="airplane-order-customer" />
+        <module name="airplane-order-provider" />
+        <module name="airplane-pay-api" />
+        <module name="airplane-pay-customer" />
+        <module name="airplane-pay-provider" />
+        <module name="airplane-pre-page" />
+        <module name="airplane-user-api" />
+        <module name="airplane-user-customer" />
+        <module name="airplane-user-provider" />
+        <module name="flight_springboot_dubbo" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="airplane-alipay-customer" target="1.8" />
+      <module name="dubbox_common" target="1.5" />
+      <module name="dubbox_customer" target="1.8" />
+      <module name="dubbox_provider" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
